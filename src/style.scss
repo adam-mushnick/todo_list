@@ -1,0 +1,59 @@
+
+$body-bg: black;
+$input-border-color:  white;
+$input-color: white;
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+/* my css */
+html {
+  box-sizing: border-box;
+}
+
+li {
+  cursor: pointer;
+  background-color:white;
+}
+
+li.stripe {
+  background-color: $blue-100;
+}
+
+li.checked {
+  text-decoration: line-through;
+}
+
+li:hover {
+  cursor: pointer;
+  background-color: $blue-400;
+  color: white;
+  padding: 10px 15px;
+}
+
+li.removed{
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.close {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  padding: 5px 10px;
+  margin-right: 5px;
+  border-radius: 5px;
+  transform: translate(0%, -50%);
+  z-index: 1;
+}
+
+.close:hover {
+  background-color: $blue-300;
+  color: white;
+}
+
+.checklist-icon{
+    // the only way to change color of svg with css
+filter: invert(56%) sepia(89%) saturate(735%) hue-rotate(189deg) brightness(101%) contrast(99%);
+}
+/* end my css */
